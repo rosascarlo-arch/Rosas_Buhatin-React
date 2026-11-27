@@ -4,6 +4,10 @@ import ProfileScreen from '../screens/ProfileScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import Test from '../screens/Test';
 import SalaryCalculatorScreen from '../screens/SalaryCalculatorScreen';
+import TodoListScreen from '../screens/TodoListScreen';
+import TravelTodoScreen from '../screens/TravelTodoScreen';
+
+
 
 const Drawer = createDrawerNavigator();
 
@@ -15,7 +19,8 @@ export default function DrawerNavigator() {
       <Drawer.Screen name="Profile" component={ProfileScreen} />
       <Drawer.Screen name="Settings" component={SettingsScreen} />
       <Drawer.Screen name = "Salary Calculator" component={SalaryCalculatorScreen}/>
-      
+      <Drawer.Screen name="Study Planner" component={TodoListScreen}/>
+      <Drawer.Screen name="Travel Planner" component={TravelTodoScreen}/>
     </Drawer.Navigator>
   );
 }
